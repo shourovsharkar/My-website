@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Jakaria | Digital Marketer & Growth Partner</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --accent-yellow: #f59e0b;
+            --accent-blue: #38bdf8;
+            --text-main: #f3f4f6;
+            --text-sub: #9ca3af;
+            --border-color: #30363d;
+            --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: var(--font-family);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 2.5rem;
+        }
+
+        .brand {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--accent-yellow);
+            letter-spacing: -0.5px;
+        }
+
+        .brand span {
+            color: var(--text-main);
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .tagline {
+            display: inline-block;
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--accent-yellow);
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero h2 {
+            font-size: 1.25rem;
+            color: var(--accent-blue);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            color: var(--text-sub);
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--accent-yellow);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3.5rem;
+        }
+
+        .service-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+        }
+
+        .service-card h3 {
+            font-size: 1.1rem;
+            color: var(--accent-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .service-card p {
+            color: var(--text-sub);
+            font-size: 0.9rem;
+        }
+
+        .why-us {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 3.5rem;
+        }
+
+        .why-us-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .why-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        .why-item::before {
+            content: "✓";
+            color: var(--accent-yellow);
+            font-weight: bold;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .contact-item h4 {
+            color: var(--accent-yellow);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-item a, .contact-item p {
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.95rem;
+            word-break: break-all;
+        }
+
+        .contact-item a:hover {
+            color: var(--accent-blue);
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-sub);
+            font-size: 0.85rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">FREELANCER <span>JAKARIA</span></div>
+        </header>
+
+        <section class="hero">
+            <span class="tagline">Your Growth Partner</span>
+            <h1>FREELANCER JAKARIA</h1>
+            <h2>Professional Digital Marketer & Growth Expert</h2>
+            <p>Helping Businesses Grow Online with Smart Digital Solutions</p>
+        </section>
+
+        <h2 class="section-title">Digital Marketing Services</h2>
+        <section class="services-grid">
+            <div class="service-card">
+                <h3>SEO</h3>
+                <p>On-Page, Off-Page & Technical SEO strategies to improve search engine rankings.</p>
+            </div>
+            <div class="service-card">
+                <h3>Social Media Marketing</h3>
+                <p>Strategy & management for Facebook, Instagram, LinkedIn, and social growth.</p>
+            </div>
+            <div class="service-card">
+                <h3>Google Ads & PPC</h3>
+                <p>Targeted ad campaigns and optimization for high-ROI conversions.</p>
+            </div>
+            <div class="service-card">
+                <h3>Content Marketing</h3>
+                <p>Blogging, article writing, and strategic content planning to build authority.</p>
+            </div>
+            <div class="service-card">
+                <h3>Email Marketing</h3>
+                <p>Custom campaign design and marketing automation for customer retention.</p>
+            </div>
+            <div class="service-card">
+                <h3>YouTube SEO & Marketing</h3>
+                <p>Channel growth, video SEO, and targeted audience engagement strategies.</p>
+            </div>
+            <div class="service-card">
+                <h3>AI Marketing Solutions</h3>
+                <p>Leveraging AI tools, ChatGPT, and automated systems to scale operations.</p>
+            </div>
+            <div class="service-card">
+                <h3>Lead Generation & CRM</h3>
+                <p>B2B lead lists, research, email list building, and CRM setup.</p>
+            </div>
+            <div class="service-card">
+                <h3>Website Design & Development</h3>
+                <p>Responsive WordPress, Shopify landing page creation, and optimization.</p>
+            </div>
+        </section>
+
+        <section class="why-us">
+            <h2 class="section-title" style="margin-bottom: 1.5rem;">Why Work With Me?</h2>
+            <div class="why-us-grid">
+                <div class="why-item">Proven Strategies</div>
+                <div class="why-item">Transparent Communication</div>
+                <div class="why-item">Affordable Packages</div>
+                <div class="why-item">Long Term Support</div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-item">
+                <h4>WhatsApp</h4>
+                <a href="https://wa.me/8801608385603" target="_blank">01608 385 603</a>
+            </div>
+            <div class="contact-item">
+                <h4>Email</h4>
+                <a href="mailto:mdjakariaislam23062006@gmail.com">mdjakariaislam23062006@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <h4>Website</h4>
+                <a href="https://dev-jakariaislambd.pantheonsite.io" target="_blank">dev-jakariaislambd.pantheonsite.io</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Freelancer Jakaria. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
